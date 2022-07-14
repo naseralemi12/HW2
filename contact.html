@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <h3>PROJECTS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <h3>WHO AM I ?</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>CONTACT ME</h1>
+    </header>
+    <main>
+        <form>
+            <table>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>Name: </th>
+                    <td><input type="text" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td><input type="text" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Reason: </th>
+                    <td>
+                        <select>
+                            <option id="Reason">No Reason</option>
+                            <optgroup label="Personal Reason">
+                            </optgroup>
+                            <optgroup label="Business Reason">
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Message:</th>
+                    <td><textarea placeholder="Write a detailed message..." rows="10" cols="35"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button> Send </button></td>
+                </tr>
+            </table>
+        </form>
+        <Fieldset>
+            <legend>(Optional)</legend>
+            <form>
+                <label for="contactways">Choose the best way to be contacted back:</label>
+                <input list="contactway" name="contactway" id="contactways">
+                <datalist id="contactway">
+              <option value="Phone call">
+              <option value="Text Message">
+              <option value="Email">
+            </datalist>
+                <input type="submit">
+            </form>
+            <button onclick="">Show hidden content</button>
+            <template>
+                <h2>Thanks for checking out my page</h2>
+              </template>
+            <h4>Priority for answering messages:</h4>
+            <ol>
+                <li>Business reason</li>
+                <li>Personal reason</li>
+            </ol>
+            <h4>A random video for your entertainment</h4>
+
+            <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+            <p>Forget about the video, check out my latest rap track:</p>
+
+            <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+            <h5>Still bored? check this out!</h5>
+            <svg height="100" width="100%">
+    <rect x="10" y="10" width="60" height="30"></rect>
+    <rect x="10" y="10" rx="10" ry="10" height="30" width="100"></rect>
+    </svg>
+            <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        </Fieldset>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
